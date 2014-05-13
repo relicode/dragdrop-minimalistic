@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Drag & Drop demo</title>
+		<meta charset='UTF-8'>
+  	<link href='stylesheets/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/print.css' media='print' rel='stylesheet' type='text/css' />
+    <!--[if IE]>
+    	<link href='stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <![endif]-->
+    <link href='js/lib/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.min.css' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<h1>Drag & Drop demo</h1>
+		<div class='area-wrapper'>
+			<div class='drop-area area'>
+				<h1 class='drop-area-header'>Drop area</h1>
+				<hr />
+				<div class='target'></div>
+			</div>
+			<div class='drag-area area'>
+				<h1 class='drag-area-header'>Drag area</h1>
+				<hr />
+				<img class='garment source' src='img/garments/shirt-front.png' alt='Shirt front' />
+				<hr />
+				<img class='garment source' src='img/garments/hat-front.png' alt='Hat front' />
+				<hr />
+			</div>
+		</div>
+
+		<!-- Underscore templates -->
+		<script id='toolbar-template' type='text/template'>
+			<div class='toolbar clearfix'>
+				<input class='close-toolbar' type='button' value='Close' />
+				<div class='toolbar-buttons'>
+					<input class='flip-garment' type='button' value='Flip' />
+					<input class='delete-garment' type='button' value='Delete' />
+				</div>
+				<br /><hr />
+				<div class='resize-label float'>Resize</div>
+				<div class='resize-slider float'></div>
+				<div class='resize-value float' data-value='<%- sizeRatio %>'><%- sizeRatio %></div>
+				<br /><hr />
+				<div class='rotate-label float'>Rotate</div>
+				<div class='rotate-slider float'></div>
+				<div class='rotate-value float' data-value='<%- angle %>'><%- angle %></div>
+			</div>
+		</script>
+
+		<!-- JavaScript -->
+		<script type='text/javascript' src='js/lib/jquery-ui-1.10.4/js/jquery-1.10.2.js'></script>
+		<script type='text/javascript' src='js/lib/jquery-ui-1.10.4/js/jquery-ui-1.10.4.min.js'></script>
+		<script type='text/javascript' src='js/lib/underscore-min.js'></script>
+		<script type='text/javascript' src='js/lib/backbone-min.js'></script>
+		<script type='text/javascript' src='js/lib/jQueryRotateCompressed.js'></script>
+		<script type='text/javascript' src='js/app.js'></script>
+
+	</body>
+
+</html>
+

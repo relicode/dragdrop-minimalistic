@@ -1,0 +1,109 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$application-font: 'Lato', sans-serif;
+$border-width: 1px;
+$header-height: 24px;
+
+h1 {
+  font-size: $header-height;
+  font-family: $application-font;
+  height: $header-height;
+  margin: 1em;
+  position: relative;
+  text-align: center;
+}
+
+div.area {
+  background-color: silver;
+  border: solid black $border-width;
+  float: left;
+  height: 700px;
+  width: 500px - $border-width * 2;
+  text-align: center;
+
+  & > .item {
+    // border: solid black 1px;
+    cursor: move;
+  }
+}
+
+div.area-wrapper {
+  background-color: gray;
+  margin: 0 auto 0 auto;
+  position: relative;
+  width: 1000px;
+}
+
+div.drop-area {
+  & > .target {
+    background: url(../img/das_model.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.garment {
+  cursor: move;
+}
+
+.toolbar-wrapper {
+  border: solid black 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  & > .toolbar {
+    background-color: #94dbff;
+    padding: 1em;
+    position: relative;
+
+    & > .close-toolbar {
+      right: 1em;
+      position: absolute;
+      top: 1em;
+    }
+
+    & > .float {
+      float: left;
+    }
+
+    & > .toolbar-buttons {
+      text-align: center;
+    }
+
+    & > .resize-label, .rotate-label {
+      width: 20%;
+    }
+
+    & > .resize-slider, .rotate-slider {
+      width: 50%;
+    }
+
+    & > .resize-value, .rotate-value {
+      width: 20%;
+    }
+
+    & > .resize-label, .rotate-label, .resize-value, .rotate-value {
+      font-family: $application-font;
+      text-align: center;
+    }
+  }
+}
+
