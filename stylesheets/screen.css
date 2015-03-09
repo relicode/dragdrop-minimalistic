@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,51 +24,51 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 12, ../sass/screen.scss */
-h1 {
+h1, h3 {
   font-size: 24px;
   font-family: "Lato", sans-serif;
   height: 24px;
@@ -78,6 +78,11 @@ h1 {
 }
 
 /* line 21, ../sass/screen.scss */
+h3 {
+  font-size: 16px;
+}
+
+/* line 25, ../sass/screen.scss */
 div.area {
   background-color: silver;
   border: solid black 1px;
@@ -86,12 +91,12 @@ div.area {
   width: 498px;
   text-align: center;
 }
-/* line 29, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 div.area > .item {
   cursor: move;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 div.area-wrapper {
   background-color: gray;
   margin: 0 auto 0 auto;
@@ -99,7 +104,7 @@ div.area-wrapper {
   width: 1000px;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 div.drop-area > .target {
   background: url(../img/das_model.png);
   background-position: center;
@@ -108,7 +113,7 @@ div.drop-area > .target {
   position: relative;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -117,56 +122,56 @@ div.drop-area > .target {
   /* 2 */
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .garment {
   cursor: move;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .toolbar-wrapper {
   border: solid black 1px;
   position: fixed;
   top: 0;
   width: 100%;
 }
-/* line 72, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar {
   background-color: #94dbff;
   padding: 1em;
   position: relative;
 }
-/* line 77, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .close-toolbar {
   right: 1em;
   position: absolute;
   top: 1em;
 }
-/* line 83, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .float {
   float: left;
 }
-/* line 87, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .toolbar-buttons {
   text-align: center;
 }
-/* line 91, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .resize-label, .toolbar-wrapper > .toolbar .rotate-label {
   width: 20%;
 }
-/* line 95, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .resize-slider, .toolbar-wrapper > .toolbar .rotate-slider {
   width: 50%;
 }
-/* line 99, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .resize-value, .toolbar-wrapper > .toolbar .rotate-value {
   width: 20%;
 }
-/* line 103, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .toolbar-wrapper > .toolbar > .resize-label, .toolbar-wrapper > .toolbar .rotate-label, .toolbar-wrapper > .toolbar .resize-value, .toolbar-wrapper > .toolbar .rotate-value {
   font-family: "Lato", sans-serif;
   text-align: center;

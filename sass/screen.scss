@@ -9,13 +9,17 @@ $application-font: 'Lato', sans-serif;
 $border-width: 1px;
 $header-height: 24px;
 
-h1 {
+h1, h3 {
   font-size: $header-height;
   font-family: $application-font;
   height: $header-height;
   margin: 1em;
   position: relative;
   text-align: center;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 div.area {
